@@ -17,25 +17,24 @@ There are 3 parameters in this function:
 
 Example 1:
 
-maximum page = 15
+maximum page = 21
 
-current page = 12
+current page = 18
 
 Index = 5
 
 
-Result: [11,12,13,14,15]
+![image_2022-01-24_00-31-27](https://user-images.githubusercontent.com/63034463/150680915-b4c2e722-d203-47c6-9ae1-f33e5ab5ddfa.png)
 
 Example 2:
 
-maximum page = 60
+maximum page = 11
 
-current page = 12
+current page = 2
 
-Index = 5
+Index = 3
 
-
-Result: [10, 11, 12, 13, 14]
+![image_2022-01-24_00-33-52](https://user-images.githubusercontent.com/63034463/150680994-6259931d-3869-4b32-bbf6-0f9a9bb184b4.png)
 
 
 
