@@ -1,17 +1,13 @@
-page = 63
-num_pages = 100
-max_pages = 65
-
-if int(page) <= 5:
-    print([*range(1,6)])
-elif int(page) > (max_pages -5):
-    print([*range(max_pages-4,max_pages+1)])
-else:    
-    leftIndex = (int(page) - 4)
-    if leftIndex < 1:
-        leftIndex = 1
-    rightIndex = (int(page) + 1)
-    if rightIndex > num_pages:
-        rightIndex = num_pages + 4
-    custom_range = range(leftIndex, rightIndex)
-    print([*custom_range])
+def pagination(max_page,curr_page,index):
+    sum = index//2
+    #print the exception at the start
+    if int(curr_page) < (index):
+        print([*range(1,index+1)])
+    #print the exception at the end 
+    elif curr_page > (max_page - index):
+        print([*range((max_page+1)-index, max_page+1)])
+    else:
+        if index%2 == 0:
+            print([*range(curr_page-sum,curr_page+sum)])
+        else:
+            print([*range(curr_page-sum,curr_page+sum+1)])
